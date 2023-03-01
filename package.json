@@ -9,12 +9,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:ui": "rm -rf build && cd ../../../workspaces/helsinki/part2/part2-6 && npm run build && cp -r build ../../../../documents/GitHub/PART3-NOTES-BACKEND",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
-},
+  },
   "author": "David Fuller",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
